@@ -1,0 +1,20 @@
+
+body {
+    display: flex;
+    background-color: beige;
+    justify-content: center;
+}
+
+.div_main > div {
+    background-color: beige;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-self: center;
+    border-radius: 10px;
+    height: 300px;
+
+}
+
