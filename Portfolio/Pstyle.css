@@ -74,7 +74,7 @@ p {
     width: 200px;
     height: 55px;
     border-radius: 30px;
-    background-color: coral;
+    background-color: blue;
     text-align: center;
     font-size: 30px;
     font-weight: 300;
@@ -83,7 +83,7 @@ p {
 }
 
 .button:hover {
-    background-color: #ef744b;
+    background-color: cyan;
 }
 
 .button:active {
@@ -159,7 +159,7 @@ hr {
 
 .project-link {
     text-decoration: none;
-    color: #ef744b;
+    color: #223351;
 }
 
 a {
@@ -168,7 +168,7 @@ a {
 }
 
 .hamburger {
-    display: none;
+    color:  white;
 }
 
 .hamburger:focus{
@@ -190,7 +190,7 @@ a {
     ul {
         display: none;
         background-color: #2b2c38;
-        margin: 0ppx;
+        margin: 0px;
     }
 
     ul.show {
@@ -206,4 +206,28 @@ a {
     .logo {
         display: none;
     }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+
 }

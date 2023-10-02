@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="Pstyle.css"/>
     <script src="p.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
     <title>Portfolio</title>
     <meta charset="UTF-8" />
     
@@ -13,19 +13,21 @@
   <body>
       <section class="hero">
           <nav>
-              <img class="logo" src="" alt="Ania Kubow's logo"/>
+              <img class="logo" src="" alt="Logo"/>
               <ul id="nav-list">
                   <li><a href="#about-me">About me</a></li>
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#contact-me">Contact</a></li>
               </ul>
-              <button class="hamburger" id="hamburger">
-                  <i class="fas fa-bars"></i>
-              </button>
+              <div class="container" onclick="burgerF(navList)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
           </nav>
           <div class="hero-area">
             <div class="hero-text">
-                <h1>name</h1>
+                <h1>Name</h1>
                 <p>text</p>
                 <div class="button"><a href="#about-me">About me</a></div>
             </div>
