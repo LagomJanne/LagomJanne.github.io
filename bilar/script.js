@@ -15,7 +15,29 @@ const brand = document.getElementById("brand")
 const color = document.getElementById("color")
 const lista_bilar_div = document.getElementById("listabilarDiv")
 
-//------------------------------------------------------------
+//getDataFromLocalStorage()-----------------------------------------------------------
+async function getDataFromLocalStorage(){
+    try{
+        billista = await JSON.parse(localStorage.getItem("bilarlistan"))
+
+        //om billistan är tom Null från localStorage
+        if (billista == null){
+            billista = []
+        }
+
+
+        lista_bilar_div.innerHTML=""
+
+        billista.forEach(createHtmlBilLista)
+
+    }
+    catch (e){
+        console.log(`Fel: ${e}`)
+    
+    }
+}
+
+getDataFromLocalStorage()
 // addButtonClick()
 function addButtonClick(){
 
@@ -64,3 +86,21 @@ const createHtmlBilLista = (bil) => {
     bildiv.append(bilH2, bilPcolor, bilDelButton)
     lista_bilar_div.appendChild(bildiv)
 }
+
+
+//deleteBil------------------------------------------
+let deleteBil = (e) => {
+    const ny_billista = billista.filter((o, i) => o.bid != e.target.id)
+
+    billista = ny_billista
+    //skriver till LocalStorage
+    localStorage.setItem("bilarlistan", JSON.stringify(billista))
+    //läser från local storage och visar sen på webbsidan den nya listan
+    getDataFromLocalStorage();
+
+
+
+}
+window.addEventListener("click", deleteBil)
+
+

@@ -1,5 +1,6 @@
-function burgerF(navList) {
-    navList.classList.toggle('show',)
+function burgerC(navList) {
+    navList.classList.toggle('change')
+    navList.classList.toggle('show')
 }
 
 const hamburgerButton = document.getElementById('hamburger')
