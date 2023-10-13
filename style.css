@@ -1,26 +1,252 @@
-/*En kommentar*/
-
-
 body {
-    background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+section {
+    background-color: rgb(196, 196, 196);
+}
+
+.hero {
+    background-color: #1c1d25;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav {
     display: flex;
-    justify-content: center;
-}
-h2{
-    padding: 5%;
+    justify-content: space-between;
+
 
 }
 
-img{
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    position: sticky;
+}
+
+li {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
     width: 200px;
-    border-radius: 15px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 117);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
 }
 
-div{
-    background-color: lightblue;
-    border-radius: 15px;
-    width: fit-content;
+.button:hover {
+    background-color: rgb(33, 34, 121);
 }
-p{
-    border-width: 400px;
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 80px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(72, 72, 72);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #223351;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    color:  rgb(236, 236, 236);
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+ 
+    
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+
+    .change ul {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navContainer {
+        display: flex;
+        
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        
+      }
+      
+      .bar1, .bar2, .bar3 {
+        display: flex;
+        width: 60px;
+        height: 8px;
+        background-color: white;
+        margin: 9px 0;
+        transition: 0.4s;
+        border-radius: 5px;
+        align-self: flex-end;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 17px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -17px) rotate(45deg);
+      }
+
 }
