@@ -198,11 +198,11 @@ a {
  
     
 
-    ul {
+     ul {
         display: none;
         background-color: #2b2c38;
         margin: 0px;
-    }
+    } 
 
     .change ul {
         display: block;
@@ -248,5 +248,48 @@ a {
       .change .bar3 {
         transform: translate(0, -17px) rotate(45deg);
       }
+
+
+      /* ... Your existing CSS ... */
+
+@media only screen and (min-width: 1000px) {
+    ul {
+        display: flex;
+        background-color: #2b2c38;
+        margin: 0px;
+    }
+    
+    .change ul {
+        display: flex;
+    }
+    
+    nav {
+        display: flex;
+        background-color: #2b2c38;
+    }
+    
+    .logo {
+        display: block; /* Make sure the logo is visible */
+    }
+    
+    .container {
+        display: none; /* Hide the burger button on larger screens */
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .nav-list ul {
+      flex-direction: row; /* Keep the navigation items horizontal */
+    }
+    
+    .nav-list li {
+      display: block;
+      padding-left: 5px;
+      padding-right: 5px;
+      float: right;
+    }
+  }
+  
+
 
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotteri</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="flex">
+<h1>Lotteri</h1>
+<h3>Välj antal lotter: </h3>
+    <div class="number-input">
+        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+        <input class="antal_lotter" id="antal_lotter" min="1" name="quantity" value="1" type="number" max="5">
+        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+      </div>
+      <p>Max 5st lotter</p>
+      <button class="Knapp">Lotta</button>
+      <div id="priser_div"></div>
+</div>
+</body>
+</html>

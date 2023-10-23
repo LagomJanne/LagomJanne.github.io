@@ -1,0 +1,114 @@
+
+body {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    justify-content: center;
+
+}
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    height: 350px;
+}
+
+.lotter-flexdiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+p {
+    color: gray;
+    font-size: 10px;
+}
+
+h1 {
+    color: black;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  .number-input {
+    border: 2px solid #000000;
+    display: inline-flex;
+    border-radius: 10px;
+  }
+  
+  .number-input,
+  .number-input * {
+    box-sizing: border-box;
+  }
+  
+  .number-input button {
+    outline:none;
+    background-color: lightcyan;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+  }
+
+  .Knapp {
+    background-color: lightcyan;
+    border-radius: 7px;
+    border: solid black 1px;
+    color: black;
+  }
+
+  .Knapp:hover {
+    cursor: pointer;
+  }
+
+  .plus {
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .minus {
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+
+  .number-input button:after {
+    display: inline-block;
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: '\f077';
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  .number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  
+  .number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    border: solid #ddd;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
