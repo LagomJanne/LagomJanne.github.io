@@ -4,7 +4,7 @@ body {
 }
 
 section {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(247, 247, 247);
 }
 
 .hero {
@@ -24,9 +24,12 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: nowrap;
+    flex-direction: row;
 
 }
+
+
 
 ul {
     display: flex;
@@ -34,7 +37,7 @@ ul {
     width: 500px;
     justify-content: space-evenly;
     font-size: 30px;
-    position: sticky;
+    flex-direction: row;
 }
 
 li {
@@ -104,8 +107,11 @@ p {
 }
 
 .logo {
-    height: 80px;
-    margin: 30px;
+    height: 100px;
+    margin-right: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 35px;
 }
 .social {
     margin: 20px;
@@ -155,6 +161,12 @@ p {
     }
 }
 
+li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 .project-image {
     margin-top: 25px;
     width: 250px;
@@ -196,7 +208,11 @@ a {
         align-self: flex-end;
     }
  
-    
+     li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+     }
 
      ul {
         display: none;
@@ -236,7 +252,7 @@ a {
         margin: 9px 0;
         transition: 0.4s;
         border-radius: 5px;
-        align-self: flex-end;
+        
       }
       
       .change .bar1 {
@@ -251,11 +267,13 @@ a {
 
 
       /* ... Your existing CSS ... */
+}
+
 
 @media only screen and (min-width: 1000px) {
     ul {
         display: flex;
-        background-color: #2b2c38;
+        background-color: #1c1d25;
         margin: 0px;
     }
     
@@ -265,31 +283,48 @@ a {
     
     nav {
         display: flex;
-        background-color: #2b2c38;
+        background-color: #1c1d25;
+        flex-direction: row;
+        position: absolute;
     }
     
     .logo {
-        display: block; /* Make sure the logo is visible */
+        display: block; 
     }
     
     .container {
-        display: none; /* Hide the burger button on larger screens */
+        display: none; 
     }
 }
 
-@media only screen and (min-width: 1001px) {
+
+
+ /*@media only screen and (min-width: 1001px) {
     .nav-list ul {
-      flex-direction: row; /* Keep the navigation items horizontal */
+      flex-direction: row; 
     }
     
     .nav-list li {
       display: block;
       padding-left: 5px;
       padding-right: 5px;
-      float: right;
-    }
+      float: right; 
+    } 
   }
   
-
-
+*/
+#dog {
+    border-radius: 5px;
 }
+
+#dog {
+    opacity: 0;
+    -webkit-transition: opacity 1.5s ease;
+    -moz-transition: opacity 1.5s ease;
+    -ms-transition: opacity 1.5s ease;
+    -o-transition: opacity 1.5s ease;
+    transition: opacity 1.5s ease;
+  }
+  #dog:hover {
+      opacity: 1;
+  }
