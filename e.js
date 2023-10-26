@@ -14,10 +14,16 @@ function burgerC(button) {
 }
 
 function resizeFunction() {
-  var w = window.innerWidth;
+  const w = window.innerWidth;
 
   if (w >= 1000) {
     document.getElementById('nav-list').style.display ="block";
+
+  
     
+  }
+  else if (w < 1000){
+    document.getElementById('nav-list').style.display ="none"
+    button.classList.toggle("change"); 
   }
 }

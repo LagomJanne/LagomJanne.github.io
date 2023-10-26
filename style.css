@@ -203,6 +203,11 @@ a {
     position: absolute;
     flex-wrap: nowrap;
     float: right;
+    width: 100%;
+}
+
+span {
+    white-space: nowrap;
 }
 
 
@@ -290,21 +295,30 @@ a {
         display: flex;
     }
     
-    nav {
+    #div_nav {
         display: flex;
         background-color: #1c1d25;
         flex-direction: row;
         position: absolute;
+        align-items: center;
     }
     
     .logo {
-        display: block; 
+        display: block;
+        float: left;
     }
     
     .container {
         display: none; 
     }
+    #nav-list {
+        justify-content: space-evenly;
+    }
 }
+
+
+
+
 
 #dog {
     border-radius: 5px;
