@@ -26,6 +26,7 @@ nav {
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+    background-color: white;
 
 }
 
@@ -112,6 +113,7 @@ p {
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 35px;
+    float: left;
 }
 .social {
     margin: 20px;
@@ -196,6 +198,13 @@ a {
     outline: 0;
 }
 
+#div_nav {
+    margin-top: 0px;
+    position: absolute;
+    flex-wrap: nowrap;
+    float: right;
+}
+
 
 @media only screen and (max-width: 1000px) {
     .hamburger {
@@ -205,7 +214,7 @@ a {
         color: white;
         font-size: 30px;
         margin: 20px;
-        align-self: flex-end;
+    
     }
  
      li {
@@ -224,7 +233,7 @@ a {
         display: block;
     }
 
-    nav {
+    #div_nav {
         display: flex;
         background-color: #2b2c38;
     }
@@ -252,6 +261,7 @@ a {
         margin: 9px 0;
         transition: 0.4s;
         border-radius: 5px;
+        justify-content: flex-end;
         
       }
       
@@ -265,9 +275,8 @@ a {
         transform: translate(0, -17px) rotate(45deg);
       }
 
-
-      /* ... Your existing CSS ... */
 }
+
 
 
 @media only screen and (min-width: 1000px) {
@@ -297,22 +306,6 @@ a {
     }
 }
 
-
-
- /*@media only screen and (min-width: 1001px) {
-    .nav-list ul {
-      flex-direction: row; 
-    }
-    
-    .nav-list li {
-      display: block;
-      padding-left: 5px;
-      padding-right: 5px;
-      float: right; 
-    } 
-  }
-  
-*/
 #dog {
     border-radius: 5px;
 }
